@@ -133,21 +133,21 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
+  justify-content: space-between;
+  max-width: 60rem;
+  margin: 0 auto;
 }
 .features .feature__boxes::after {
   content: '';
-  width: 60%;
+  width: 100%;
   height: 2px;
   background-color: #eee;
   position: absolute;
-  top: 5rem;
+  top: 4.9rem;
 }
 .features .feature__boxes .feature__box {
   z-index: 2;
   background: #fff;
-}
-.features .feature__boxes .feature__box:not(:last-child) {
-  margin-right: 8%;
 }
 .features .feature__boxes .feature-box-icon {
   font-size: 4rem;
@@ -174,10 +174,50 @@ body {
 .middle-hero__left {
   padding: 7rem;
   background-image: linear-gradient(to right, #ee6787, #f59460);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .middle-hero__right {
   background-image: linear-gradient(to right, rgba(90, 98, 132, 0.5), rgba(90, 98, 132, 0.5)), url(../assets/middle-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.showcase {
+  padding: 8rem 3rem;
+  text-align: center;
+}
+.showcase .card {
+  max-width: 50rem;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.showcase .card__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.showcase .card__caption {
+  padding: 1rem;
+}
+.showcase .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.showcase .pagination__dots {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+.showcase .pagination__dots:not(:last-child) {
+  margin-right: 2rem;
+}
+.showcase .pagination__dots--selected {
+  background: #ee6787;
+  border-color: #ee6787;
 }
