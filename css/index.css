@@ -17,6 +17,8 @@ body {
   padding: 8rem 3rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  color: #444;
+  line-height: 1.5;
 }
 .container {
   width: 100%;
@@ -24,6 +26,17 @@ body {
   margin: 0 auto;
   background-color: white;
   border-radius: 10px;
+}
+.secondary-heading {
+  font-size: 2.6rem;
+  color: #ee6787;
+  margin-bottom: 2rem;
+}
+.text {
+  max-width: 45rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
 }
 .background-center {
   background-size: cover;
@@ -56,7 +69,7 @@ body {
 }
 .hamburger__line {
   width: 26px;
-  height: 2px;
+  height: 3px;
   background-color: #bdbdbd;
   display: block;
   transition: all 0.3s;
@@ -103,4 +116,43 @@ body {
 }
 .cta__button:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.features {
+  padding: 8rem 3rem;
+  text-align: center;
+}
+.features .feature__boxes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.features .feature__boxes::after {
+  content: '';
+  width: 60%;
+  height: 2px;
+  background-color: #eee;
+  position: absolute;
+  top: 5rem;
+}
+.features .feature__boxes .feature__box {
+  z-index: 2;
+  background: #fff;
+}
+.features .feature__boxes .feature__box:not(:last-child) {
+  margin-right: 8%;
+}
+.features .feature__boxes .feature-box-icon {
+  font-size: 4rem;
+  color: #ee6787;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.features .feature__boxes .feature-box-caption {
+  font-size: 2rem;
 }
