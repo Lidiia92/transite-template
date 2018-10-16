@@ -43,8 +43,6 @@ body {
 }
 .text-white {
   color: #fff;
-  margin-left: 0;
-  margin-right: 0;
 }
 .background-center {
   background-size: cover;
@@ -220,4 +218,45 @@ body {
 .showcase .pagination__dots--selected {
   background: #ee6787;
   border-color: #ee6787;
+}
+.subscriptions {
+  padding: 8rem 3rem;
+  background-image: linear-gradient(to right, rgba(147, 127, 143, 0.75), rgba(90, 98, 132, 0.75));
+  text-align: center;
+}
+.form {
+  max-width: 45rem;
+  margin: 0 auto;
+  display: flex;
+}
+.form__input {
+  flex-grow: 1;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px 0 0 5px;
+  font-family: inherit;
+  font-weight: inherit;
+  caret-color: #fff;
+}
+.form__input::placeholder {
+  color: #ddd;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__button {
+  background-color: #fff;
+  border: 2px solid #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #5a6284;
+  border-radius: 0 5px 5px 0;
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+.form__button:focus {
+  outline: none;
 }
