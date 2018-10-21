@@ -10,7 +10,7 @@ body {
   font-size: 1.6rem;
 }
 body {
-  background-image: url(../assets/background.jpg);
+  background-image: linear-gradient(to right, rgba(90, 98, 132, 0.6), rgba(90, 98, 132, 0.6)), url(../assets/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,6 +20,23 @@ body {
   font-weight: 300;
   color: #444;
   line-height: 1.5;
+}
+body.nav-menu-open::after {
+  visibility: visible;
+  opacity: 1;
+}
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: rgba(90, 98, 132, 0.75);
+  z-index: 4;
 }
 .container {
   width: 100%;
@@ -345,6 +362,7 @@ body {
   background-image: linear-gradient(to right, #ee6786, #f59460);
   transform: translateX(100%);
   transition: all 0.5s;
+  z-index: 5;
 }
 .nav--open {
   transform: translateX(0);
