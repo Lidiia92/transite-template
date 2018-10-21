@@ -360,8 +360,7 @@ body::after {
   width: 40rem;
   padding: 4rem;
   background-image: linear-gradient(to right, #ee6786, #f59460);
-  transform: translateX(100%);
-  transition: all 0.5s;
+  animation: runningNavBar 2s infinite;
   z-index: 5;
 }
 .nav--open {
@@ -391,6 +390,20 @@ body::after {
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
+}
+@keyframes runningNavBar {
+  0% {
+    transform: translateX(-800%);
+  }
+  80% {
+    transform: rotate(-20deg);
+  }
+  90% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 .u-margin-bottom-sm {
   margin-bottom: 2rem !important;

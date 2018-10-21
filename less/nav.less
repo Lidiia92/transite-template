@@ -12,9 +12,11 @@
       rgba(238, 103, 134, 1),
       rgba(245, 148, 96, 1)
     );
-    transform: translateX(100%);
-    transition: all .5s;
-    z-index: 5;
+    animation: runningNavBar 2s infinite;
+    // transform: translateX(100%);
+    // transition: all .5s;
+     z-index: 5;
+
 
     &--open{
         transform: translateX(0);
@@ -52,7 +54,11 @@
   }
 
 
-//   @keyframes runningNavBar {
-//     0%   { transform: translateX(-800%); }
-//     100% { transform: translateX(100%); }
-//   }
+   @keyframes runningNavBar {
+     0%   { transform: translateX(-800%);}
+     80% { transform: rotate(-20deg);}
+     90% { transform: rotate(20deg);}
+     100% { transform: translateX(100%); }
+   }
+
+ 
