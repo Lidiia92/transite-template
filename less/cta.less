@@ -5,14 +5,19 @@
     background-position: 50% 98%;
     color: white;
     text-align: center;
-
+    
     &__box {
         padding: 5rem;
-        background-image: linear-gradient(to right, rgba( #ee6787, .85), rgba( #f59460, .85));
+        background-image: linear-gradient(
+          to right,
+          rgba(238, 103, 134, 0.85),
+          rgba(245, 148, 96, 0.85)
+        );
         max-width: 50rem;
         margin: 0 auto;
         border-radius: 1rem;
-    }
+        animation: slideIn 1.5s ease-out;
+      }
 
     &__heading {
         font-size: 3.2rem;
@@ -33,6 +38,10 @@
         border-radius: 5px;
         transition: all .3s;
 
+        @media (max-width: 37.5em) {
+            width: 100%;
+        }
+
         &:hover {
             background-color: rgba(255, 255, 255, .1);
         }
@@ -52,3 +61,15 @@
         }
     }
 }
+
+@keyframes slideIn {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
