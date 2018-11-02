@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <title>Transit</title>
 </head>
 <body>
@@ -74,19 +75,42 @@
             <h2 class="secondary-heading">Etiam amet Consequat</h2>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua.</p>
-            
-            <div class="card">
-                <img src="assets/gallery1.jpg" alt="A Girl travelling in a town" class="card__img">
-                <p class="card__caption">Ipsum dolor sit amet</p>
+           
+            <div class="slider">
+                <div data-card="1" class="card card--active">
+                    <img src="assets/gallery1.jpg" alt="A Girl travelling in a town" class="card__img">
+                    <p class="card__caption">Ipsum dolor sit amet</p>
+                </div>
+
+                <div class="card" data-card="2">
+                        <img src="assets/gallery1.jpg" alt="A Girl travelling in a town" class="card__img">
+                        <p class="card__caption">Ipsum dolor sit amet</p>
+                </div>
+
+                <div class="card" data-card="3">
+                        <img src="assets/gallery1.jpg" alt="A Girl travelling in a town" class="card__img">
+                        <p class="card__caption">Ipsum dolor sit amet</p>
+                </div>
+
+                <div class="card" data-card="4">
+                        <img src="assets/gallery1.jpg" alt="A Girl travelling in a town" class="card__img">
+                        <p class="card__caption">Ipsum dolor sit amet</p>
+                </div>
+
+                <div class="card" data-card="5">
+                        <img src="assets/gallery1.jpg" alt="A Girl travelling in a town" class="card__img">
+                        <p class="card__caption">Ipsum dolor sit amet</p>
+                </div>
             </div>
 
             <div class="pagination">
-                <div class="pagination__dots"></div>
-                <div class="pagination__dots"></div>
-                <div class="pagination__dots pagination__dots--selected"></div>
-                <div class="pagination__dots"></div>
-                <div class="pagination__dots"></div>
+                    <div data-card="1" class="pagination__dots pagination__dots--selected"></div>
+                    <div data-card="2" class="pagination__dots"></div>
+                    <div data-card="3" class="pagination__dots"></div>
+                    <div data-card="4" class="pagination__dots"></div>
+                    <div data-card="5" class="pagination__dots"></div>
             </div>
+
         </section>
 
         <section class="subscriptions">
